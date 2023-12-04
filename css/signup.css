@@ -1,0 +1,101 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper{
+    background: #ecececec;
+    padding: 0 20px 0 20px;
+}
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}.right{
+    justify-content: center;
+   align-items: center;
+   align-content: center;
+    
+}
+.side-image{
+  
+  background-image: url('images2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  border-radius: 10px 0 0 10px;
+    
+
+}
+.row{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.5);
+
+}.text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+}
+.input-box{
+justify-content: center;
+box-sizing: border-box;
+}
+.input-field{
+    
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    
+}input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: none;
+    color: black;
+}.submit{
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-left: 50px;
+    border: none;
+    transition: 0.5s;
+    background-color: rgb(187, 223, 235);
+    border-radius: 4px;
+}header{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(25, 92, 37);
+}.input-box.input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}.input-field.input:focus ~ label{
+    top: -10px;
+    font-size: 10px;
+}.submit:hover{
+    background-color:rgb(33, 139, 53)
+}span{
+    
+    color: rgb(5, 95, 173);
+    
+}.signin{
+    padding-top: 5%;
+    margin-left: 15%;
+    
+}a{
+    color: red;
+}

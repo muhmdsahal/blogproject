@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>USer</title>
+    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="userdetails.css" >
+    <body>
+        <nav class="navbar navbar-expand-md bg-light   ">
+            <div class="container-fluid ">
+              <a  class="nav-link active text-uppercase text-dark" href="admindash.ejs"> BACK</a>
+              <ul class="navbar-nav nav-underline text-white">
+                <li class="nav-item ">
+                  <a class="nav-link active text-uppercase text-dark" href="/logout">Logout</a>
+                </li>
+               
+              </ul>
+            </div>
+              </nav>
+
+        <table class="table table-dark table-striped">
+            <tr align="center">
+                <th >SI NO</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+                <th>Status</th>
+               
+            </tr>
+            
+            <%i=1%>
+            <% data.reverse().forEach(function(person) { %>
+                 <% if(person.isAdmin==='Basic'){ %>
+               <tr align="center" >
+                <td><%=i++%></td>
+                 <td><%= person.name %></td>
+                 <td><%= person.email %></td>
+                 <td>
+                    <a href="/approve/<%=person._id%>">Approve</a>
+                    /
+      <a href="/reject/<%=person._id%>" onclick="return confirm('Are you sure you want to Reject?')">Reject</a>
+      /
+      <a href="viewprofile/<%=person._id%>">View profile</a>
+                 </td>
+               <td>  <div class="text-danger"><% if(person.status===0){ %>
+                    Rejected
+                    <% } %> </div>
+                   <div class="text-success"> <% if(person.status===1){ %>
+                        Accepted
+                      <% } %>
+                    </div>
+                </td>
+               </tr>
+            <% } %>
+            <% }) %>
+        </table>
+    </body>
+</html>

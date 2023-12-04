@@ -1,0 +1,132 @@
+.wrapper{
+    height: auto;
+    
+    
+   
+    background-image: url('bgarticle.jpg');
+   
+    background-size: cover;
+}body{
+    background-color:white;
+}.container{
+    display: flex;
+    gap: 39%;
+    height: 100px;
+    border-bottom: 2px solid rgb(62, 37, 30);
+   
+    
+   
+}.container-main{
+    width: 100%;
+    
+}.items{
+    margin-top: 60px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(62, 37, 30);
+    font-weight: bold;
+    text-align: center;
+    
+}a{
+    color: rgb(62, 37, 30);
+}
+.header{
+   width: 92.5%;
+   border-top: 2px solid rgb(62, 37, 30) ;
+    margin-top: 1%;
+    margin-left: 3.8%;
+    text-align: center;
+   color: rgb(62, 37, 30);
+   border-bottom: 2px solid rgb(62, 37, 30);
+}h1{
+    font-size: 76px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+}.img{
+    width: 92.5%;
+    margin-left: 3.8%;
+    margin-top: 1%;
+    height: 150px;
+    background-image: url('welcome.jpg');
+    background-position: center;
+   
+    background-size: contain;
+    
+}.blog{
+    width: 92.5%;
+   display: flex;
+    border-top: 2px solid rgb(62, 37, 30) ;
+    margin-top: 1%;
+    margin-left: 3.8%;
+    
+}.leftsports{
+    width: 70%;
+    margin-top: 1%;
+    color: rgb(62, 37, 30);
+
+}.rightsports{
+    background-image: url('sportsarticle.jpg');
+    background-position:center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin-top: 1%;
+}h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(62, 37, 30);
+}h3{
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: rgb(62, 37, 30);
+}h5{
+font-size: 15px;
+font-family: cursive;
+color: rgb(62, 37, 30);
+}p{
+font-family: 'Times New Roman', Times, serif;
+color: rgb(62, 37, 30);
+
+}
+.lefthistory{
+    background-image: url('historyarticle.jpg');
+    background-position:center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin-top: 1%;
+}.righthistory{
+    width: 70%;
+    margin-top: 1%;
+    color: rgb(62, 37, 30);
+    margin-left: 1%;
+}
+.lefttech{
+    width: 70%;
+    margin-top: 1%;
+    color: rgb(62, 37, 30);
+}.righttech{
+    background-image: url('techarticle.jpg');
+    background-position:center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin-top: 1%;
+}.leftmovie{
+    background-image: url('moviearticle.jpg');
+    background-position:center;
+   background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    margin-top: 1%;
+}.rightmovie{
+    width: 70%;
+    margin-top: 1%;
+    color: rgb(62, 37, 30);
+    margin-left: 1%;
+}h6{
+    font-size: 10px;
+    font-family: cursive;
+    color: rgb(62, 37, 30);
+    }
